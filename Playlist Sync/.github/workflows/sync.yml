@@ -29,4 +29,4 @@ jobs:
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
           SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
           APPLE_MUSIC_WEBHOOK_TOKEN: ${{ secrets.APPLE_MUSIC_WEBHOOK_TOKEN }}
-        run: python sync.py
+        run: python main.py
