@@ -7,7 +7,7 @@ from rapidfuzz import process
 # Constants
 SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
 SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
-APPLE_MUSIC_API_KEY = os.getenv("APPLE_MUSIC_API_KEY")
+APPLE_MUSIC_API_KEY = os.getenv("APPLE_MUSIC_WEBHOOK_TOKEN")
 
 def load_state():
     """Load state from state.json"""
