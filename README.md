@@ -70,12 +70,14 @@ javascript:(function(){
     const music = MusicKit.getInstance();
     const token = music.developerToken;
     const userToken = music.musicUserToken;
-    fetch('YOUR_PIPEDREAM_WEBHOOK_URL', {
+    fetch('[https://your-actual-pipedream-url.m1.pipedream.net](https://your-actual-pipedream-url.m1.pipedream.net)', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ userToken: userToken, developerToken: token })
-    }).then(() => alert('Apple Music Tokens Synced to GitHub!'));
-})();```
+    }).then(() => alert('Apple Music Tokens Synced!'));
+})();
+```
+
 
 ### 2. Environment Variables & Secrets
 Configure the following secrets in your GitHub Repository settings:
