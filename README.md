@@ -75,7 +75,7 @@ javascript:(function(){
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ userToken: userToken, developerToken: token })
     }).then(() => alert('Apple Music Tokens Synced to GitHub!'));
-})();
+})();```
 
 ### 2. Environment Variables & Secrets
 Configure the following secrets in your GitHub Repository settings:
