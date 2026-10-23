@@ -10,7 +10,7 @@ APPLE_MUSIC_TOKEN = os.getenv("APPLE_MUSIC_WEBHOOK_TOKEN")
 
 # Playlist IDs (Hardcoded constants since they are public/non-sensitive)
 APPLE_MASTER_PLAYLIST_ID = "YOUR_APPLE_MASTER_PLAYLIST_ID"
-SPOTIFY_TARGET_PLAYLIST_ID = "YOUR_SPOTIFY_TARGET_PLAYLIST_ID"
+SPOTIFY_TARGET_PLAYLIST_ID = "7gTN8X6AHEJ98T8uFT8P7Q"
 
 def get_spotify_token():
     """Generate a Spotify access token using client credentials"""
