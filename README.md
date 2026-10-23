@@ -28,8 +28,9 @@ While Apple Music hosts a preferred master playlist, managing cross-platform lis
        │ (Runs Python Reconciler Script)
        ▼
 [ Spotify API & State Tracking ]
+'''
 
-End-to-End Workflow:
+## End-to-End Workflow:
 Client-Side Extraction: A custom JavaScript bookmarklet taps into Apple Music's underlying MusicKit instance to extract the active Developer JWT (developerToken) and session user token (musicUserToken).
 Serverless Secure Tunnel: The tokens are securely POSTed to a Pipedream webhook, which encrypts them on-the-fly using Libsodium (Crypto Box Seal) against the GitHub repository's public key.
 Zero-Trust Storage: The encrypted payload is automatically pushed via GitHub's API into a single secure repository secret (APPLE_MUSIC_WEBHOOK_TOKEN), preventing credential leakage.
