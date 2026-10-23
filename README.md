@@ -76,3 +76,10 @@ javascript:(function(){
         body: JSON.stringify({ userToken: userToken, developerToken: token })
     }).then(() => alert('Apple Music Tokens Synced to GitHub!'));
 })();
+
+### 2. Environment Variables & Secrets
+Configure the following secrets in your GitHub Repository settings:
+SPOTIFY_CLIENT_ID
+SPOTIFY_CLIENT_SECRET
+APPLE_MUSIC_WEBHOOK_TOKEN (Automatically populated and updated by your Pipedream webhook)
+GITHUB_PERSONAL_ACCESS_TOKEN (Configured inside Pipedream for automated secret rotation)
